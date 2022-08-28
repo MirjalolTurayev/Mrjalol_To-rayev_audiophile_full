@@ -1,0 +1,77 @@
+.product {
+    &__box {
+        width: 327px;
+        height: 320px;
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../../../img/Bitmap\ \(10\).svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        border-radius: 8px;
+        margin-top: 24px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-top: 101px;
+        margin-left: 24px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        padding: 15px 30px;
+        border: 1px solid;
+        margin-left: 24px;
+        margin-top: 32px;
+    }
+    &__link:hover{
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .product{
+        &__box{
+            margin-top: 32px;
+            min-width: 100%;
+            min-height: 100%;
+            height: 320px;
+            background-image: url(../../../img/Bitmap\ \(11\).svg);
+            background-position: right;
+        }
+        &__title{
+            margin-left: 38px;
+        }
+        &__link{
+            margin-left: 39px;
+        }
+    }    
+}
+@media only screen and (min-width: 1024px) {
+    .product{
+        &__box{
+            margin-top: 48px;
+            background-image: url(../../../img/Bitmap\ \(13\).svg);
+            background-position: center;
+            background-size: cover;
+        }
+        &__title{
+            margin-left: 95px;
+        }
+        &__link{
+            margin-left: 96.5px;
+        }
+    }    
+}

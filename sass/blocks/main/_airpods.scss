@@ -1,0 +1,126 @@
+.airpods {
+    &__box {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    &__left {
+        width: 327px;
+        height: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        margin-top: 24px;
+        background-image: url(../../../img/Bitmap\ \(14\).svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+    }
+
+    &__img {
+        border-radius: 8px;
+    }
+
+    &__right {
+        width: 327px;
+        height: 200px;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 8px;
+        margin-top: 24px;
+        background: #F1F1F1;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 41px;
+        margin-left: 24px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 15px 30px;
+        border: 1px solid #000000;
+        margin-top: 32px;
+        margin-left: 25.5px;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .airpods {
+        &__box {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        &__left {
+            min-width: 100%;
+            min-height: 100%;
+            width: 300px;
+            height: 320px;
+            margin-right: 6.5px;
+            background-image: url(../../../img/Bitmap\ \(15\).svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 8px;
+        }
+
+        &__right {
+            min-width: 100%;
+            min-height: 100%;
+            width: 300px;
+            height: 320px;
+            margin-left: 6.5px;
+        }
+
+        &__title {
+            margin-top: 101px;
+            margin-left: 31px;
+        }
+
+        &__link {
+            margin-left: 31px;
+        }
+    }
+}
+@media only screen and (min-width: 1024px){
+    .airpods{
+        &__left{
+            background-image: url(../../../img/Bitmap\ \(3\).png);
+            margin-right: 15px;
+            margin-top: 48px;
+        }
+        &__right{
+            margin-left: 15px;
+            margin-top: 48px;
+        }
+        &__title {
+            margin-top: 101px;
+            margin-left: 95px;
+        }
+
+        &__link {
+            margin-left: 96.5px;
+        }
+    }
+}

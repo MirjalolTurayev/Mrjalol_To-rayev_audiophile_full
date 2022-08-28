@@ -1,0 +1,152 @@
+.speaker {
+    width: 100%;
+
+    &__box {
+        background-color: #D87D4A; 
+        max-width: 100%;
+        max-height: 100%;       
+        width: 327px;
+        height: 600px;
+        border-radius: 8px;
+        margin-top: 120px;
+        background-image: url(../../../img/Group\ 4.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        margin-top: 45px;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    &__copy {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        margin-top: 24px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #000000;
+        padding: 15px 30px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin-top: 24px;
+    }
+
+    &__link:hover {
+        background-color: #4C4C4C;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+    .speaker {
+        &__box {
+            min-width: 100%;
+            min-height: 100%;
+            background-color: #D87D4A;
+            height: 720px;
+            border-radius: 8px;
+            margin-top: 96px;
+            background-image: url(../../../img/Group\ 4\ \(1\).svg);
+            background-repeat: no-repeat;
+            background-size: 944px 944px;
+            background-position: center top -300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img{
+            width: 197px;
+            height: 237px;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 60px;
+        }
+
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .speaker{
+        &__box {
+            background-color: #D87D4A;
+            height: 560px;
+            border-radius: 8px;
+            margin-top: 168px;
+            background-image: url(../../../img/Group\ 4\ \(1\).svg);
+            background-repeat: no-repeat;
+            background-size: 944px 944px;
+            background-position:  left -150px bottom -340px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        &__link{
+            margin-right: 110px;
+        }
+        &__title{
+            text-align: start;
+        }
+        &__copy{
+            text-align: start;
+        }
+        &__img{
+            min-width: 100%;
+            min-height: 100%;
+            width: 410.23px;
+            height: 493px;
+            margin-top: 90px;
+        }
+    }
+    
+}

@@ -1,0 +1,19 @@
+/* Error: expected "{".
+ *    ,
+ * 80 |         mar
+ *    |            ^
+ *    '
+ *   sass\blocks\header\_header.scss 80:12  @import
+ *   sass\blocks\_blocks.scss 1:8           @import
+ *   sass\main.scss 4:8                     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 80 \2502          mar\d\a    \2502             ^\a    \2575 \a   sass\\blocks\\header\\_header.scss 80:12  @import\a   sass\\blocks\\_blocks.scss 1:8           @import\a   sass\\main.scss 4:8                     root stylesheet';
+}

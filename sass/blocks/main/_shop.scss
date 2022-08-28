@@ -1,0 +1,146 @@
+.shop {
+    &__list {
+        list-style: none;
+        margin-top: 92px;
+    }
+
+    &__item {
+        width: 327px;
+        max-width: 100%;
+        height: 165px;
+        max-height: 100%;
+        background: #F1F1F1;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px auto 0;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: -20% auto 0;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 26px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 17px;
+    }
+    &__link:hover{
+        color: #D87D4A;
+    }
+
+    &__span {
+        color: #D87D4A;
+        margin-left: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .shop {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 148px;
+
+        }
+
+        &__item {
+            max-width: 100%;
+            width: 223px;
+            max-height: 100%;
+            height: 165px;
+            margin: 5px;
+        }
+
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: -40% auto 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .shop {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 200px;
+
+        }
+
+        &__item {
+            width: 327px;
+            max-width: 100%;
+            height: 165px;
+            max-height: 100%;
+        }
+
+        &__subtitle {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-top: 36px;
+        }
+
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: -25% auto 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .shop {
+        &__item {
+            width: 350px;
+            max-width: 100%;
+            height: 204px;
+            max-height: 100%;
+        }
+        &__subtitle {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 1.28571px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-top: 43px;
+        }
+        &__img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: -20% auto 0;
+        }
+    }
+}

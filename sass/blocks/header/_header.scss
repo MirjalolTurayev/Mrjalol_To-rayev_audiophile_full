@@ -1,0 +1,132 @@
+.header {
+    background-color: #000000;
+    height: 100px;
+
+    &__logo {
+        max-width: 100%;
+    }
+
+    &__basket {
+        max-width: 100%;
+    }
+
+    &__btn {
+        width: 16;
+        height: 15px;
+        max-width: 100%;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__box {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 76px;
+    }
+
+    &__link-basket {
+        display: inline-block;
+    }
+
+    &__hr {
+        background-color: #fff;
+        opacity: 0.2;
+    }
+
+}
+
+
+.modal {
+    position: fixed;
+    width: 200px;
+    height: 1024px;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+
+    &__list {
+        margin-top: 20px;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: #D87D4A;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 170px;
+        margin-top: 30px;
+    }
+}
+
+.fa-bars {
+    color: white;
+}
+
+.fa-xmark {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 769px) {
+    .header {
+        &__btn {
+            display: none;
+        }
+
+        &__nav {
+            margin: 0;
+        }
+        &__list {
+            display: inline-block;
+            display: flex;
+            list-style: none;
+            margin-right: 15%;
+        }
+        &__item{
+            margin-right: 10%;
+        }
+        &__link {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        &__link:hover{
+            color:#D87D4A;
+        }
+    }
+
+}
